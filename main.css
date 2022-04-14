@@ -84,7 +84,7 @@
 }
 
 .center {
-    margin-top: auto;
+    margin-top: initial;
     display: flex;
     justify-content: initial;
     
