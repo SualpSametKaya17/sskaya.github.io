@@ -8,7 +8,42 @@
     <meta name="viewport" content="width=device-width, inital-scale= 1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="pcss.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <style>
+        body {
+            background-image: url(background2.png);
+            background-size: 1550px 750px;
+        }
+
+        #gallery {
+            width: 1000px;
+        }
+
+            #gallery ul {
+                width: 300px;
+                list-style-type: none;
+                float: left;
+            }
+
+            #gallery li {
+                display: inline;
+                float: left;
+                padding: 16px;
+            }
+
+            #gallery img {
+                border-style: none;
+            }
+
+        figure {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        figcaption {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 <body>
     <div class="menu-bar">
@@ -43,15 +78,15 @@
                             <div class="sub-menu-2">
                                 <ul>
                                     <li><a href="https://goo.gl/maps/tauwrqKrx8hRrFyF8">Location</a></li>
-                                    <li><a href="#">Photograph</a></li>
-                                    <li><a href="#">Lunch</a></li>
+                                    <li><a href="photo.html">Photograph</a></li>
+                                    
                                 </ul>
                             </div>
                         </li>
                     </ul>
                 </div>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="mailto:kaya-sualpsamet2001@hotmail.com">Contact</a></li>
             <li><a href="mbs.html">Membership</a></li>
             <li>
                 <a href="#">Social Media</a>
@@ -69,43 +104,6 @@
 
         </div>
     </div>
-
-        <style>
-            body {
-                background-image: url(background2.png);
-                background-size: 1550px 750px;
-            }
-
-            #gallery {
-                width: 1000px;
-            }
-
-                #gallery ul {
-                    width: 300px;
-                    list-style-type: none;
-                    float: left;
-                }
-
-                #gallery li {
-                    display: inline;
-                    float: left;
-                    padding: 16px;
-                }
-
-                #gallery img {
-                    border-style: none;
-                }
-
-            figure {
-                padding-top: 30px;
-                text-align: center;
-            }
-
-            figcaption {
-                font-weight: bold;
-                font-size: 1.5em;
-            }
-        </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
             $(document).ready(function () {
@@ -135,22 +133,13 @@
                 <li>
                     <a href="maçfotoğrafları1.png" title="Match Photos"><img src="maçfotoğrafları1.png" width="100" height="75" alt="Match Photos" style="border: solid yellow;"></a>
                 </li>
-                <li>
-                    <a href="beraber.png" title="Family"><img src="beraber.png" width="100" height="75" alt="Family" style="border: solid yellow;"></a>
-                </li>
-                <li>
-                    <a href="maçfotoğrafları2.png" title="Before the Match 2"><img src="maçfotoğrafları2.png" width="100" height="75" alt="Before the Match 2" style="border: solid blue" ;></a>
-                </li>
+
             </ul>
             <figure style="margin-left: 500px; border-block: 2px solid blue; border-block-end: 2px solid yellow;">
                 <img src="photo1.jpg" width="500" height="400" alt="photo1">
                 <figcaption style="margin-left:10px;">Togather</figcaption>
             </figure>
         </div>
-
-        <style>
-        </style>
-
 </body>
 
 </html>
