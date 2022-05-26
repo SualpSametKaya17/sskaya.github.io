@@ -1,0 +1,221 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(background2.png);
+    background-position: center;
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+}
+
+#form {
+    border: double;
+    border-color: white;
+    background-color: #000;
+    height: 450px;
+    width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    opacity: 0.7;
+}
+
+#first-group {
+    border: none;
+    width: 400px;
+    margin-top: 38px;
+    position: absolute;
+}
+
+#content {
+    border: 1px solid #fff;
+    margin: 10px;
+    margin-left: 8px;
+    padding: 5px;
+}
+
+    #content #input-group {
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-left: 8px;
+        width: 300px;
+        color: #fff;
+    }
+
+    #content #input-group2 {
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-left: 8px;
+        width: 300px;
+        color: #fff;
+    }
+
+    #content #input-group3 {
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-left: 8px;
+        width: 300px;
+        color: #fff;
+    }
+
+    #content #input-group4 {
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-left: 8px;
+        width: 300px;
+        color: #fff;
+    }
+
+    #content #input-group5 {
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-left: 8px;
+        width: 300px;
+        color: #fff;
+    }
+
+    #content #input-group6 {
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-left: 8px;
+        width: 300px;
+        color: #fff;
+    }
+
+    #content #input-group7 {
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-left: 8px;
+        width: 300px;
+        color: #fff;
+    }
+
+    #content #input-group8 {
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-left: 8px;
+        width: 300px;
+        color: #fff;
+    }
+
+    #content #input-group10 {
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-left: 8px;
+        width: 300px;
+        color: #fff;
+    }
+
+::placeholder {
+    color: #fff;
+}
+
+.fa {
+    display: inline-block;
+    color: darkblue;
+    border-right: 1px solid #fff;
+    padding: 8px;
+    margin-left: 8px;
+}
+
+#second-group {
+    border: none;
+    width: 400px;
+    margin-top: 48px;
+    margin-left: 400px;
+}
+
+#submit-btn {
+    margin-top: 30px;
+    margin-left: 600px;
+    background: transparent;
+    color: #fff;
+    width: 150px;
+    border: 1px solid darkblue;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.menu-bar {
+    text-align: center;
+    background: #00035ca6;
+}
+
+    .menu-bar ul {
+        display: inline-flex;
+        list-style: none;
+    }
+
+        .menu-bar ul li {
+            width: 155px;
+            margin: 12px;
+            padding: 15px;
+        }
+
+            .menu-bar ul li a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            .active, .menu-bar ul li:hover {
+                background: #e8d585;
+                border-radius: 8px;
+            }
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #00035ca6;
+    margin-top: 15px;
+    margin-left: -10px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+    .menu-bar ul li:hover .sub-menu-1 ul {
+        display: block;
+        border-radius: 2px;
+    }
+
+        .menu-bar ul li:hover .sub-menu-1 ul li {
+            width: 123px;
+            padding: 8px;
+            border-bottom: 1px dotted #e8d585;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+            .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+                color: darkgreen;
+            }
+
+.sub-menu-2 {
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2 {
+    position: absolute;
+    display: block;
+    margin-top: -36px;
+    margin-left: 116px;
+    background-color: #00035ca6;
+}
+.text-white{
+    color:aliceblue;    
+}

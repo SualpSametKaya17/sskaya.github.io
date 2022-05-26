@@ -6,7 +6,7 @@
     <title>KKTCGFB</title>
     <meta name="viewport" content="width=device-width, inital-scale= 1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="pcss.css" />
+    <link rel="stylesheet" href="member.css" />
 </head>
 <body>  
     <div class="menu-bar">
@@ -67,87 +67,81 @@
             </li>
         </ul>
         <div>
+        </div>
 
 
         </div>
-    </div>
-        <center>
-        <h1 style="margin-top:100px; margin-bottom:15px;">Membership Form</h1>
-        <form method="post" action="receiver.asp">
-            <fieldset style="max-width:450px;">
-                <legend style="color: darkblue; border: double; text-align: center">User information</legend>
-                <table border="0">
-                    <tr>
-                        <td>User First Name</td>
-                        <td>
-                            <input type="text" name="fn" placeholder="First Name" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>User Last Name</td>
-                        <td>
-                            <input type="text" name="ln" placeholder="Last Name" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Telephone Number</td>
-                        <td>
-                            <input type="number" name="tn" placeholder="+90" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>User Mail</td>
-                        <td>
-                            <input type="text" name="um" placeholder="                 @outlook.com" />
-                        </td>
-                    </tr>
-                </table>
-            </fieldset>
-            <br />
-            <fieldset style="max-width:450px;">
-                <legend style="color:darkblue; border:double; text-align:center">Membership Selection and Information</legend>
-                <table>
-                    <tr>
+         <div class="container">
+            <form class="form-group" method="post" action="in.asp">
+                <div id="form">
+                    <br />
+                    <h1 class="text-white text-center" style="font-family:'Bodoni MT';">Reservation Form</h1>
 
-                        <td>Choose Your Package</td>
-                        <td style="padding: 5px 50px 15px 30px;">
-                            <select name="opr">
-                                <option name="White" value="15000">White
-                                <option name="Yellow" value="40000">Yellow
-                                <option name="Darkblue" value="17000">Darkblue
+                    <div id="first-group">
+
+                        <div id="content">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" name="fn" id="input-group" placeholder="First name">
+                        </div>
+
+                        <div id="content">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <input type="number" name="tn" id="input-group2" placeholder="Phone number">
+                        </div>
+
+                        <div id="content">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <select name="gnumber" id="input-group4" style="background-color: black;">
+                                <option value="">Number of Child</option>
+                                <option value="">None</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
                             </select>
-                        </td>
+                        </div>
+                        <div id="content" name="mounth" class="text-white">
+                            <i class="fa fa-money" aria-hidden="true"></i>
+                            <input type="radio" name="button" value="">None
+                            <input type="radio" name="button" value="6">6 Month
+                            <input type="radio" name="button" value="12">12 Month
 
-                    </tr>
-                    <tr>
-                        <td>Birthday</td>
-                        <td style="padding: 40px 5px 20px 30px;">
-                            <input type="date" name"date1" id="date" value="25-01-2022" />
-                        </td>
-                    </tr>
+                        </div>
+                    </div>
 
-                    <tr>
-                        <td>Buying Options</td>
+                    <div id="second-group">
 
-                    <tr>
-                        <td></td>
-                        <td style="Font-size:15px;">
-                            <input type="radio" name="button" value="1">1 Month.
-                            <input type="radio" name="button" value="3">3 Month.
-                            <input type="radio" name="button" value="6">6 Month.
-                            <input type="radio" name="button" value="12" >12 Month.
+                        <div id="content">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" name="ln" id="input-group5" placeholder="Last name">
+                        </div>
 
-                        </td>
-                    </tr>
-                </table>
-            </fieldset>
-            <table>
-                <tr>
-                    <td></td>
-                    <td style="font-size:25px; border:15px;"><input type="submit" value="Submit"></td>
-                </tr>
-            </table>
-        </form>
-    </center>
+                        <div id="content">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <input type="email" name="um" id="input-group6" placeholder="Email">
+                        </div>
+
+
+                        <div id="content">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <input type="text" name="cal" id="input-group3" placeholder="Birth Date">
+                        </div>
+
+                        <div id="content">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <select id="input-group8" name="rt" style="background-color: black;">
+                                <option value="">Membershsip Type</option>
+                                <option value="2000">White</option>
+                                <option value="3000">Yellow</option>
+                                <option value="750">Dark Blue</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <button style="font-family:'Bodoni MT';" type="submit" value="Submit" id="submit-btn">Submit</button>
+
+                </div>
+            </form>
+        </div>
 </body>
 </html>
