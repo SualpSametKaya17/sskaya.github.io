@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Watch Matches Togather</title>
+    <link rel="stylesheet" href="pcss.css" />
+    <meta name="viewport" content="width=device-width, inital-scale= 1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="pcss.css" />
+    <style>
+        body {
+            background-image: url(background2.png);
+            background-size: 1550px 750px;
+        }
+
+        #gallery {
+            width: 1000px;
+        }
+
+            #gallery ul {
+                width: 300px;
+                list-style-type: none;
+                float: left;
+            }
+
+            #gallery li {
+                display: inline;
+                float: left;
+                padding: 16px;
+            }
+
+            #gallery img {
+                border-style: none;
+            }
+
+        figure {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        figcaption {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="logo"> <a href="project.html"><img src="gfblogo.png" alt="logo" width="50" height="50" style="margin-top:10px; margin-left:15px;" /></a></div>
+        <ul>
+
+            <li><a href="project.html">KKTCGFB<i class=""></i></a></li>
+            <li>
+                <a href="#">About Us</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="mission.html">Misyon</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Organizations</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="wm.html">Watch Matches</a></li>
+                        <li><a href="dinner.html">Dinner</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="https://www.fenerbahce.org/">Fenerbahce</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li class="hover-me">
+                            <a href="#">Society</a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="https://goo.gl/maps/tauwrqKrx8hRrFyF8">Location</a></li>
+                                    <li><a href="photo.html">Photograph</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="mailto:kaya-sualpsamet2001@hotmail.com">Contact</a></li>
+            <li><a href="mbs.html">Membership</a></li>
+            <li>
+                <a href="#">Social Media</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="https://twitter.com/ydunigfb" class="fa fa-twitter"></a></li>
+                        <li><a href="https://www.facebook.com/YD%C3%9C-UN%C4%B0-GFB-1512857435695592/" class="fa fa-facebook"></a></li>
+                        <li><a href="https://www.instagram.com/ydunigfb/" class="fa fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div>
+
+
+        </div>
+    </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#gallery a').click(function () {
+                    var galleryHref = $(this).attr('href');
+                    var galleryAlt = $(this).attr('title');
+                    $('figure').css('display', 'none');
+                    $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+                    $('figcaption').html(galleryAlt);
+                    $('figure').fadeToggle(1000);
+                    return false;
+                });
+            });
+        </script>
+        <h1 style="text-align: center; margin-bottom: 15px; margin-top: 50px; color:#f0df35; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Image Gallery</h1>
+        <div id="gallery">
+            <ul>
+                <li>
+                    <a href="photo1.jpg" title="Togather"><img src="photo1.jpg" width="100" height="75" alt="Togather" style="border: solid yellow;"></a>
+                </li>
+                <li>
+                    <a href="photo2.jpg" title="Before the Match"><img src="photo2.jpg" width="100" height="75" alt="Before the Match" style="border: solid blue;"></a>
+                </li>
+                <li>
+                    <a href="kadınlargünü.jpg" title="Woman Day"><img src="kadınlargünü.jpg" width="100" height="75" alt="Woman Day" style="border: solid blue;"></a>
+                </li>
+                <li>
+                    <a href="maçfotoğrafları1.png" title="Match Photos"><img src="maçfotoğrafları1.png" width="100" height="75" alt="Match Photos" style="border: solid yellow;"></a>
+                </li>
+
+            </ul>
+            <figure style="margin-left: 500px; border-block: 2px solid blue; border-block-end: 2px solid yellow;">
+                <img src="photo1.jpg" width="500" height="400" alt="photo1">
+                <figcaption style="margin-left:10px;">Togather</figcaption>
+            </figure>
+        </div>
+</body>
+
+</html>
