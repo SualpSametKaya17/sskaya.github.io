@@ -35,6 +35,12 @@ body {
     margin-left: 8px;
     padding: 5px;
 }
+#content2 {
+    border: 1px solid #fff;
+    margin: 10px;
+    margin-left: 8px;
+    padding: 5px;
+}
 
     #content #input-group {
         border: none;
